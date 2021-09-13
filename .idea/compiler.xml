@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MMALL_Interface" />
+        <module name="MMALL_Pojo" />
+        <module name="MMALL_Controller_Manager" />
+        <module name="MMALL_Controller_Portal" />
+        <module name="MMALL_Common" />
+        <module name="MMALL_Mapper" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MMALL_Dao" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
