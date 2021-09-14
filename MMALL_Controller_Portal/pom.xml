@@ -18,7 +18,27 @@
         </dependency>
         <dependency>
             <groupId>com.mmall</groupId>
-            <artifactId>MMALL_Interface</artifactId>
+            <artifactId>MMALL_User_Interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mmall</groupId>
+            <artifactId>MMALL_Shipping_Interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mmall</groupId>
+            <artifactId>MMALL_Product_Interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mmall</groupId>
+            <artifactId>MMALL_Order_Interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mmall</groupId>
+            <artifactId>MMALL_Cart_Interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

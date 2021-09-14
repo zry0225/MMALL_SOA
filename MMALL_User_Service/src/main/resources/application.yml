@@ -1,0 +1,64 @@
+server:
+  port: 8000
+dubbo:
+  application:
+    #服务名称，不能和别的服务提供者重复
+    name: User_Provider
+  registry:
+    #指定注册中心
+    protocol: zookeeper
+    #注册中心的地址
+    address: 192.168.218.60:2181
+    #协议固定dubbo，服务暴露的接口
+  protocol:
+    name: dubbo
+    port: 20800
+    #dubbo扫描那个路径下的包
+  scan:
+    base-packages: com.zhiyou.service.impl
+
+spring:
+  #rabbimq配置
+  rabbitmq:
+    host: 192.168.8.102
+    username: admin
+    password: 123456
+    #correlated：发布消息成功到交换机之后就会触发回调方法
+    #simple：两个效果，一个和上面的一样，另一个则是使用rabbitTemplate来调用waitForConfirms
+    #或者waitForConfirmsDrDie方法等待broker节点返回发送结果，根据返回的结果进行下一步的操作。
+    #waitForConfirmsDrDie方法返回false的时候会关闭信道
+    #none：默认值，禁用发布确认
+    publisher-confirm-type: correlated
+    #开启
+    publisher-returns: true
+
+  #redis配置
+  redis:
+    host: 192.168.8.102
+    port: 6379
+    jedis:
+      pool:
+        #最大活跃链接
+        max-active: 10
+        #最大等待时间（-1 表示无限等待）
+        max-wait: -1
+        #最大闲置连接
+        max-idle: 100
+        #最小闲置连接
+        min-idle: 1
+    #连接超时时间
+    timeout: 2000ms
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///mmall?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+#mybatis-plus配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  #指定mapper的路径
+  mapper-locations: mappers/*.xml

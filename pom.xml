@@ -11,10 +11,20 @@
     <modules>
         <module>MMALL_Pojo</module>
         <module>MMALL_Common</module>
-        <module>MMALL_Interface</module>
-        <module>MMALL_Mapper</module>
         <module>MMALL_Controller_Manager</module>
         <module>MMALL_Controller_Portal</module>
+        <module>MMALL_User_Interface</module>
+        <module>MMALL_User_Service</module>
+        <module>MMALL_Cart_Service</module>
+        <module>MMALL_Category_Service</module>
+        <module>MMALL_Order_Service</module>
+        <module>MMALL_Product_Service</module>
+        <module>MMALL_Shipping_Service</module>
+        <module>MMALL_Cart_Interface</module>
+        <module>MMALL_Category_Interface</module>
+        <module>MMALL_Order_Interface</module>
+        <module>MMALL_Product_Interface</module>
+        <module>MMALL_Shipping_Interface</module>
     </modules>
 
     <properties>
@@ -52,6 +62,63 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-tomcat</artifactId>
+                <version>${springBoot}</version>
+            </dependency>
+
+            <!--springboot整合rabbitmq-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+                <version>${springBoot}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.amqp</groupId>
+                <artifactId>spring-rabbit-test</artifactId>
+                <version>2.3.10</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!--springboot整合redis-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${springBoot}</version>
+            </dependency>
+            <!-- 开启@EnableRedisHttpSession这个注解是由spring-session-data-redis提供的
+                用于开启spring session支持
+            -->
+            <dependency>
+                <groupId>org.springframework.session</groupId>
+                <artifactId>spring-session-data-redis</artifactId>
+                <version>2.5.2</version>
+            </dependency>
+
+            <!--springboot整合log4j2-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+                <version>${springBoot}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-log4j2</artifactId>
+                <version>${springBoot}</version>
+            </dependency>
+
+
+
+
+
+
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -102,7 +169,7 @@
 
             <dependency>
                 <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
+                <artifactId>druid</artifactId>
                 <version>${druid}</version>
             </dependency>
 

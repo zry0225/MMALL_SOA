@@ -1,0 +1,18 @@
+server:
+  port: 8004
+dubbo:
+  application:
+    #服务名称，不能和别的服务提供者重复
+    name: Category_Provider
+  registry:
+    #指定注册中心
+    protocol: zookeeper
+    #注册中心的地址
+    address: 192.168.218.60:2181
+    #协议固定dubbo，服务暴露的接口
+  protocol:
+    name: dubbo
+    port: 20800
+    #dubbo扫描那个路径下的包
+  scan:
+    base-packages: com.zhiyou.service.impl

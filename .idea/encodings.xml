@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/MMALL_Cart_Interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Cart_Interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Cart_Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Cart_Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Category_Interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Category_Interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Category_Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Category_Service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MMALL_Common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MMALL_Common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MMALL_Controller_Manager/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MMALL_Controller_Manager/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MMALL_Controller_Portal/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MMALL_Controller_Portal/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/MMALL_Interface/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/MMALL_Interface/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/MMALL_Mapper/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/MMALL_Mapper/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Order_Interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Order_Interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Order_Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Order_Service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MMALL_Pojo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MMALL_Pojo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Product_Interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Product_Interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Product_Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Product_Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Shipping_Interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Shipping_Interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Shipping_Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_Shipping_Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_User_Interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_User_Interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_User_Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMALL_User_Service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

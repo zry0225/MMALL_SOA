@@ -5,11 +5,18 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/MMALL_User_Service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/MMALL_CarMapper/pom.xml" />
         <option value="$PROJECT_DIR$/MMALL_Dao/pom.xml" />
+        <option value="$PROJECT_DIR$/MMALL_Interface/pom.xml" />
+        <option value="$PROJECT_DIR$/MMALL_Mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/MMALL_Orderltem_Service/pom.xml" />
+        <option value="$PROJECT_DIR$/MMALL_PayInfo_Service/pom.xml" />
+        <option value="$PROJECT_DIR$/MMALL_User_Controller/pom.xml" />
       </set>
     </option>
   </component>

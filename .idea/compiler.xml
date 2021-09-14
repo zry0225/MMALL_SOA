@@ -6,16 +6,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MMALL_Interface" />
         <module name="MMALL_Pojo" />
-        <module name="MMALL_Controller_Manager" />
+        <module name="MMALL_Shipping_Service" />
+        <module name="MMALL_Order_Interface" />
+        <module name="MMALL_Order_Service" />
+        <module name="MMALL_Product_Interface" />
+        <module name="MMALL_Shipping_Interface" />
         <module name="MMALL_Controller_Portal" />
+        <module name="MMALL_User_Service" />
+        <module name="MMALL_Cart_Interface" />
+        <module name="MMALL_Category_Service" />
+        <module name="MMALL_Cart_Service" />
+        <module name="MMALL_Controller_Manager" />
+        <module name="MMALL_Product_Service" />
         <module name="MMALL_Common" />
-        <module name="MMALL_Mapper" />
+        <module name="MMALL_Category_Interface" />
+        <module name="MMALL_User_Interface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="MMALL_CarMapper" target="1.8" />
       <module name="MMALL_Dao" target="1.8" />
+      <module name="MMALL_Interface" target="1.8" />
+      <module name="MMALL_Mapper" target="1.8" />
+      <module name="MMALL_Orderltem_Service" target="1.8" />
+      <module name="MMALL_PayInfo_Service" target="1.8" />
+      <module name="MMALL_User_Controller" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
