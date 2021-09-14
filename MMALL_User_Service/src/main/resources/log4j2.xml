@@ -10,7 +10,7 @@
 	8:ALL
 	如果没有配置默认级别是TRACE，这里定义的是log4j2框架自身的输出级别
 				 -->
-<Configuration status="OFF">
+<Configuration status="INFO">
     <Appenders><!-- 用于配置输出源 -->
         <!-- Console：用于配置控制台的输出 -->
         <Console name="console" target="SYSTEM_OUT">
@@ -30,10 +30,14 @@
                 append			文件是否在每次重启服务的时候清空
 
                  -->
-        <File name="myLog" fileName="/Users/zhangruiyan/Desktop/IdeaProjects/mmall/log/test.log" append="true">
+        <File name="myLog" fileName="/Users/zhangruiyan/Desktop/IdeaProjects/MMALL_Parent/logs" append="true">
             <PatternLayout pattern="%d{HH:mm:ss} --- [%l] [%t] %-5level %logger{36} - %msg%n"/>
         </File>
-        <RollingFile name="rollingFile" fileName="/Users/zhangruiyan/Desktop/IdeaProjects/mmall/log/log.log" filePattern="/Users/zhangruiyan/Desktop/IdeaProjects/mmall/log/log/$${date:yyyy-MM}/%d{yyyy-MM-dd}-%i.log">
+        <!-- 日志文件保存位置
+             fileName：日志生成位置，也是日志名
+             filePattern：日志分组规范
+        -->
+        <RollingFile name="rollingFile" fileName="/Users/zhangruiyan/Desktop/IdeaProjects/MMALL_Parent/logs/mainLog.log" filePattern="/Users/zhangruiyan/Desktop/IdeaProjects/MMALL_Parent/logs/log/$${date:yyyy-MM}/%d{yyyy-MM-dd}-%i.log">
             <!-- 指定文件输出的级别，符合条件的输出，不符合的直接拒绝 -->
             <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="%d{HH:mm:ss} --- [%l] [%t] %-5level %logger{36} - %msg%n"/>
@@ -44,8 +48,9 @@
             </policies>
         </RollingFile>
     </Appenders>
+
     <Loggers><!-- 这里面要引用上面的输出源 -->
-        <Root level="DEBUG"><!-- Root用来定义我们自身的输出级别 -->
+        <Root level="INFO"><!-- Root用来定义我们自身的输出级别 -->
             <AppenderRef ref="console"/>
             <AppenderRef ref="rollingFile"/>
             <AppenderRef ref="myLog"/>

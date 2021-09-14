@@ -14,6 +14,7 @@ import com.mmall.util.PropertiesUtil;
 import com.mmall.vo.ProductDetailVo;
 import com.mmall.vo.ProductListVo;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +35,7 @@ import java.util.Map;
 @RequestMapping("manage/product")
 public class ProductController {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProductController.class);
-    @Autowired
+    @DubboReference
     private ProductService productService;
 
     /**

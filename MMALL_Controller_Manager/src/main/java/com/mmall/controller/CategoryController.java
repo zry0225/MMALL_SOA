@@ -5,6 +5,7 @@ import com.mmall.common.ServerResponse;
 import com.mmall.pojo.Category;
 import com.mmall.pojo.User;
 import com.mmall.service.CategoryService;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping("manage/category")
 public class CategoryController {
-    @Autowired
+    @DubboReference
     private CategoryService categoryService;
 
 

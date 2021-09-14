@@ -8,6 +8,7 @@ import com.mmall.dao.ShippingMapper;
 import com.mmall.pojo.Shipping;
 import com.mmall.pojo.User;
 import com.mmall.service.ShoppingService;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +24,7 @@ import javax.servlet.http.HttpSession;
 @RestController
 @RequestMapping("shipping")
 public class ShoppingController {
-    @Autowired
+    @DubboReference
     private ShoppingService shoppingService;
 
     /**

@@ -10,6 +10,7 @@ import com.mmall.service.CartService;
 import com.mmall.util.PropertiesUtil;
 import com.mmall.vo.CartProductVo;
 import com.mmall.vo.CartVo;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.aspectj.weaver.ast.Var;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,7 +25,7 @@ import java.util.List;
 /**
  * @author zhangruiyan
  */
-@Service
+@DubboService
 public class CartServiceImpl implements CartService {
     private static final Logger LOGGER = LoggerFactory.getLogger(CartServiceImpl.class);
     @Autowired

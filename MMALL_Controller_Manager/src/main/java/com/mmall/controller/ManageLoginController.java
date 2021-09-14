@@ -6,6 +6,7 @@ import com.mmall.common.Const;
 import com.mmall.common.ServerResponse;
 import com.mmall.pojo.User;
 import com.mmall.service.UserService;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +17,7 @@ import javax.servlet.http.HttpSession;
 @RestController
 @RequestMapping("manage/user")
 public class ManageLoginController {
-    @Autowired
+    @DubboReference
     private UserService userService;
 
     /**

@@ -9,6 +9,7 @@ import com.mmall.pojo.Product;
 import com.mmall.pojo.User;
 import com.mmall.service.ProductService;
 import com.mmall.service.UserService;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,7 +24,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("manage")
 public class ManageController {
-    @Autowired
+    @DubboReference
     private UserService userService;
 
     /**

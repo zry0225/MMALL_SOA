@@ -6,6 +6,7 @@ import com.mmall.pojo.User;
 import com.mmall.service.UserService;
 import com.mmall.util.MD5Util;
 import org.apache.commons.lang.StringUtils;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ import java.util.Date;
 @RequestMapping("user")
 public class UserController {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
-    @Autowired
+    @DubboReference
     private UserService userService;
     @PostMapping("register.do")
     public ServerResponse<String> register(User user){

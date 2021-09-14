@@ -9,6 +9,7 @@ import com.mmall.service.ProductService;
 import com.mmall.vo.ProductDetailVo;
 import com.mmall.vo.ProductListVo;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("product")
 public class ProductSearchListController {
 
-    @Autowired
+    @DubboReference
     private ProductService productService;
 
     @RequestMapping(value = "list.do",method = RequestMethod.GET)

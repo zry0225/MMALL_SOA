@@ -8,6 +8,7 @@ import com.mmall.service.CartService;
 import com.mmall.service.CategoryService;
 import com.mmall.vo.CartProductVo;
 import com.mmall.vo.CartVo;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,7 +23,7 @@ import java.util.List;
 @RestController
 @RequestMapping("cart")
 public class CartController {
-    @Autowired
+    @DubboReference
     private CartService cartService;
 
     /**
